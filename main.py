@@ -22,7 +22,7 @@ st.set_page_config(
 
 # --- Criar o dataframe
 df = pd.read_excel(
-    io = './Gerencial Grupo Llinea 2022.xlsx',
+    io = '.\Gerencial Grupo Llinea 2022.xlsx',
     engine='openpyxl',
     sheet_name='Geral',
     usecols='A:AB',
@@ -34,7 +34,7 @@ df['mm'] = df['Mês/Ano'].dt.strftime('%m/%Y')
 
 # -- Criar o sidebar
 with st.sidebar:
-    logo_teste = Image.open('./logo Empresa.jpg')
+    logo_teste = Image.open('.\logo Empresa.jpg')
     st.image(logo_teste, width=250)
     st.header('MENU - DASHBOARD DE 2022')
    
