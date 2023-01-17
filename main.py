@@ -21,8 +21,8 @@ st.set_page_config(
 )
 
 # --- Criar o dataframe
-df = pd.read_excel(
-    io = '.\Gerencial Grupo Llinea 2022.xlsx',
+df = pd.read_csv(
+    io = '.\Gerencial Grupo Llinea 2022.csv',
     engine='openpyxl',
     sheet_name='Geral',
     usecols='A:AB',
